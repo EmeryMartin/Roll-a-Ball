@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Coins: " + count.ToString() + "/13";
-        if(count >= 13)
+        countText.text = "Cats Found: " + count.ToString() + "/7";
+        if(count >= 7)
         {
             winTextObject.SetActive(true);
             //QuitButtonObject.SetActive(true);
