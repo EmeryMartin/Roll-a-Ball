@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     //public float speed = 0;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public GameObject quitButton;
 
     private Rigidbody rb;
     private int count;
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
-        //QuitButtonObject.SetActive(false);
+        quitButton.SetActive(false);
 
     }
 
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
         if(count >= 7)
         {
             winTextObject.SetActive(true);
-            //QuitButtonObject.SetActive(true);
+            quitButton.SetActive(true);
         }
     }
 

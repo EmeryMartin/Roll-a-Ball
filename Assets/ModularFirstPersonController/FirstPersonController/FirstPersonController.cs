@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
+//using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 #if UNITY_EDITOR
 using UnityEditor;
