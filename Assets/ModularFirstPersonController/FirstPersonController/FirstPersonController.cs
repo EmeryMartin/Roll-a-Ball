@@ -8,10 +8,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 #if UNITY_EDITOR
-using UnityEditor;
+    using UnityEditor;
     using System.Net;
 #endif
 
@@ -152,8 +151,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-
-        if (lockCursor)
+        if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -738,7 +736,6 @@ public class FirstPersonController : MonoBehaviour
             SerFPC.ApplyModifiedProperties();
         }
     }
-
 
 }
 
