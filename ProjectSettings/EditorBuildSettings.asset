@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/house_inside.unity
-    guid: 34be7648d2033d14b940384b5e0571a8
+  - enabled: 1
+    path: Assets/Scenes/titleScreen.unity
+    guid: 691e25a3fb0544b45aad41699e9bbac7
   - enabled: 1
     path: Assets/Scenes/houseInside.unity
     guid: 9d3e0a1c6541f8f428509a3ab605adaf
