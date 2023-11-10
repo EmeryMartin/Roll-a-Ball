@@ -7,15 +7,15 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
 
-    //public float speed = 0;
+    public float speed = 0;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject quitButton;
 
     private Rigidbody rb;
     private int count;
-   // private float movementX;
-    //private float movementY;
+    private float movementX;
+    private float movementY;
     
     // Start is called before the first frame update
     void Start()
@@ -29,13 +29,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    /*void OnMove(InputValue movementValue)
+    void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
         movementY = movementVector.y;
-    }*/
+    }
 
     void SetCountText()
     {
@@ -47,11 +47,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*void FixedUpdate()
+    void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
         rb.AddForce(movement * speed);
-    }*/
+    }
 
     private void OnTriggerEnter(Collider other)
     {
