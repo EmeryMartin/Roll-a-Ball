@@ -11,6 +11,7 @@ public class PickUp : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject guideTextObject;
     public GameObject countTextObject;
+    public GameObject winTrigger;
 
     void Start()
     {
@@ -39,8 +40,21 @@ public class PickUp : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+
+            win();
         }
 
         SetCountText();
+    }
+    private void win()
+    {
+        if(count == 6)
+        {
+            winTrigger.SetActive(true);
+        }
+        else
+        {
+            return;
+        }
     }
 }
