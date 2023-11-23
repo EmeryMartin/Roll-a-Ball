@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class carTrigger : MonoBehaviour
+public class TriggerSetActive : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject targetObject;
+    public GameObject DeathObject;
+    public GameObject countText;
+    public GameObject guideText;
+
+
+    void OnTriggerEnter(Collider other)
     {
+        Debug.Log("crahh");
+
+        targetObject.SetActive(false);
+        DeathObject.SetActive(true);
+        countText.SetActive(false);
+        guideText.SetActive(false);
+        
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
