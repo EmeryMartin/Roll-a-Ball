@@ -7,8 +7,9 @@ public class sceneReset : MonoBehaviour
 {
     public void RestartScene()
     {
-        Debug.Log("reset");
-        //Scene thisScene = SceneManager.GetActiveScene();
-        //SceneManager.LoadScene(thisScene.name);
+        //Debug.Log("reset");
+
+        Scene thisScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(thisScene.name);
     }
 }

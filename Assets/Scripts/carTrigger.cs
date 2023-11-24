@@ -13,13 +13,13 @@ public class TriggerSetActive : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("crahh");
+        //Debug.Log("crahh");
 
         targetObject.SetActive(false);
         DeathObject.SetActive(true);
         countText.SetActive(false);
         guideText.SetActive(false);
-        
+        Cursor.lockState = CursorLockMode.None;
         
     }
 
